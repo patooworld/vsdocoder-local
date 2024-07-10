@@ -1,3 +1,12 @@
 {
-    "cmake.sourceDirectory": "C:/Users/SAMUELCHIBUNNA/vsdocoder/node_modules/bare-os"
+    "cmake.sourceDirectory": "C:/Users/SAMUELCHIBUNNA/vsdocoder/node_modules/bare-os",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
 }
