@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  vsdocoderlocal:
+    image: vsdocoderlocal
+    build:
+      context: node_modules/@tiptap/pm/model
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000

@@ -1,13 +1,24 @@
 {
     "configurations": [
-    {
-        "name": "snapshotInitialize: Microsoft production cloud",
-        "type": "al",
-        "request": "snapshotInitialize",
-        "environmentType": "Production",
-        "environmentName": "production",
-        "breakOnNext": "WebClient",
-        "executionContext": "DebugAndProfile"
-    }
+        {
+            "name": "snapshotInitialize: Microsoft production cloud",
+            "type": "al",
+            "request": "snapshotInitialize",
+            "environmentType": "Production",
+            "environmentName": "production",
+            "breakOnNext": "WebClient",
+            "executionContext": "DebugAndProfile"
+        },
+        {
+            "name": "Docker Node.js Launch",
+            "type": "docker",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node",
+            "node": {
+                "package": "${workspaceFolder}/node_modules/@tiptap/pm/model/package.json",
+                "localRoot": "${workspaceFolder}/node_modules/@tiptap/pm/model"
+            }
+        }
     ]
 }
