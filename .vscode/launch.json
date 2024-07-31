@@ -391,7 +391,6 @@
             "name": "Launch Microsoft Edge and open the Edge DevTools",
             "request": "launch",
             "type": "vscode-edge-devtools.debug",
-            "url": "" //patooworld.com, patooworld.com/index.html, patooworld.com/index.html?foo=bar, patooworld.com/index.html#hash, patooworld.com/index.html?foo=bar#hash, patooworld.com/index Provide your project's urlhttps://www.patooworld.com/index.html, https://www.patooworld.com/index.html?foo=bar, https://www.patooworld.com/index.html#hash, https://www.patooworld.com/index.html?foo=bar#hash to finish configuring
+            "url": "Provide your project's url to finish configuring".
         }
     ]
-}
