@@ -58,7 +58,7 @@ export default async function middleware(req: NextRequest) {
     );
   }
 
-  // rewrite root application to `/home` folder
+  // rewrite root application to /home folder
   if (
     hostname === "app.localhost:3000" ||
     hostname === process.env.NEXT_PUBLIC_ROOT_DOMAIN
